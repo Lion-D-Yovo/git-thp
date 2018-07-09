@@ -27,16 +27,23 @@ end
 ############################################################
 #crazy stuff on strings
 
-
-
-
+def reverse_upcase_noLTA(string)
+	string.reverse.upcase.tr('A','').tr('L', '').tr('T','')
+end
 
 ############################################################
 #42 finder
 
-
-
-
+def array_42(string)
+	tab = [ a, b, c]
+	tab.each {|x| print x = 42 " -- " }
+	
+	if tab.include?42
+		"true"
+	else
+		"false"
+	end
+end
 
 ############################################################
 #crazy stuff on arrays
